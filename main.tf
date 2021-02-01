@@ -14,4 +14,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroup"
   location = "West Europe"
+
+  tags = {
+    Environment = "Terraform Getting Started"
+    Team        = "DevOps"
+  }
 }
